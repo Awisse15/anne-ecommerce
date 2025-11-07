@@ -20,7 +20,7 @@ export default function AboutPage() {
     {
       title: "Meet the Owner",
       text: "I started Crafted by Louisse to share my love for flowers with the world. Every arrangement is carefully crafted to bring a smile to your face.",
-      image: "/owner.png",
+      image: "/owner-pic.png",
       alt: "Owner Anne Louisse",
     },
   ];

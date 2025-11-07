@@ -20,8 +20,8 @@ export default function ContactPage() {
           </p>
           <ul className="space-y-2">
             <li><strong>Phone:</strong> +1 234 567 890</li>
-            <li><strong>Email:</strong> hello@anneblooms.com</li>
-            <li><strong>Address:</strong> 123 Flower Lane, Bloomtown, USA</li>
+            <li><strong>Email:</strong> craftedbylouisse.com</li>
+            <li><strong>Address:</strong> 123 Flower Lane, Bloomtown, Philippines</li>
             <li><strong>Website:</strong> https://annelouisseechanes.my.canva.site/craftedbylouisse</li>
           </ul>
         </motion.div>
