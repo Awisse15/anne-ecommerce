@@ -28,17 +28,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {`
             window.Papercups = {
               config: {
-                accountId: "YOUR_ACCOUNT_ID",
+                accountId: "2a33ce6d-53fb-4c25-b9f6-3978ea9aedd5",
                 title: "Need help?",
                 subtitle: "Ask us anything about our flowers!",
-                baseUrl: "YOUR_BACKEND_URL",
+                baseUrl: "https://papercups-latest-yob9.onrender.com",
                 primaryColor: "#10b981"
               }
             };
           `}
         </Script>
         <Script 
-          src="YOUR_BACKEND_URL/widget.js" 
+          src="https://papercups-latest-yob9.onrender.com/widget.js" 
           strategy="afterInteractive"
         />
       </body>
