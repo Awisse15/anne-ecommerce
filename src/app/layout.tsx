@@ -1,8 +1,8 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { CartProvider } from "@/context/CartContext";
+import { ChatWidget } from "@papercups-io/chat-widget";
 import type { Metadata } from "next";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Crafted by Louisse",
@@ -23,23 +23,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="h-[calc(100vh-64px)] px-8 w-full">{children}</main>
         </CartProvider>
         
-        {/* Papercups Chat Widget */}
-        <Script id="papercups-config" strategy="afterInteractive">
-          {`
-            window.Papercups = {
-              config: {
-                accountId: "2a33ce6d-53fb-4c25-b9f6-3978ea9aedd5",
-                title: "Need help?",
-                subtitle: "Ask us anything about our flowers!",
-                baseUrl: "https://papercups-latest-yob9.onrender.com",
-                primaryColor: "#10b981"
-              }
-            };
-          `}
-        </Script>
-        <Script 
-          src="https://papercups-latest-yob9.onrender.com/widget.js" 
-          strategy="afterInteractive"
+        <ChatWidget
+          token="2a33ce6d-53fb-4c25-b9f6-3978ea9aedd5"
+          inbox="cbcad038-825f-4da5-a2d4-4f7740063589"
+          title="Welcome to Crafted by Louisse"
+          subtitle="Ask us anything about our flowers! 💐"
+          primaryColor="#f78da7"
+          baseUrl="https://papercups-latest-yob9.onrender.com"
+          showAgentAvailability={false}
+          requireEmailUpfront={false}
         />
       </body>
     </html>
